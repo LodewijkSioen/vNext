@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using static System.Math; //Using Static
 
@@ -14,6 +15,8 @@ namespace CSharpSix
 
             Console.WriteLine(test.DivideLength(0));
             Console.ReadLine();
+
+            Console.WriteLine(new Badcollection { "one", "two", "three" });//Collection Initializers with Extension 'Add'
         }
     }
 
@@ -41,10 +44,28 @@ namespace CSharpSix
             {
                 return Round(Length / by); //Using Static
             }
-            catch (DivideByZeroException ex) when (ex.Message.Length > 0)
+            catch (DivideByZeroException ex) when (ex.Message.Length > 0) //Exception Filters
             {
                 return 0;
             }
         }
+    }
+
+    public class Badcollection : IEnumerable<string>
+    {
+        private List<string> _internalCollection = new List<string>();
+
+        public void BadAdd(string value) => _internalCollection.Add(value);
+
+        public override string ToString() => String.Join(",", _internalCollection);
+
+        public IEnumerator<string> GetEnumerator()=>_internalCollection.GetEnumerator();
+
+        IEnumerator IEnumerable.GetEnumerator()=>_internalCollection.GetEnumerator();
+    }
+
+    public static class Extensions
+    {
+        public static void Add(this Badcollection collection, string value)=> collection.BadAdd(value);
     }
 }
