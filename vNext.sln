@@ -15,6 +15,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CSharpSix", "src\CSharpSix\
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VbNetFourTeen", "src\VbNetFourTeen\VbNetFourTeen.vbproj", "{15E2CFD5-24A8-4BB1-810B-0A815F754462}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNet5", "src\AspNet5\AspNet5.xproj", "{057B4C84-957D-4701-8E15-5FC226C76297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{15E2CFD5-24A8-4BB1-810B-0A815F754462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15E2CFD5-24A8-4BB1-810B-0A815F754462}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15E2CFD5-24A8-4BB1-810B-0A815F754462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057B4C84-957D-4701-8E15-5FC226C76297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057B4C84-957D-4701-8E15-5FC226C76297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057B4C84-957D-4701-8E15-5FC226C76297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057B4C84-957D-4701-8E15-5FC226C76297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +42,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{15705943-EA51-4F7C-A93F-E0E7FB6787AC} = {892191B8-6884-41BD-8ED3-31D83352BF5C}
 		{15E2CFD5-24A8-4BB1-810B-0A815F754462} = {892191B8-6884-41BD-8ED3-31D83352BF5C}
+		{057B4C84-957D-4701-8E15-5FC226C76297} = {892191B8-6884-41BD-8ED3-31D83352BF5C}
 	EndGlobalSection
 EndGlobal
